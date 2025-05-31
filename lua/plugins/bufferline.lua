@@ -9,8 +9,8 @@ return {
       options = {
         offsets = {
             {
-                filetype = "Neotree",
-                text = "File Explorer",
+                filetype = "neo-tree",
+                text = "0xbdg",
                 highlight = "Directory",
                 separator = true,
                 text_align = "center"
@@ -18,7 +18,7 @@ return {
         },
         mode = 'buffers', -- set to "tabs" to only show tabpages instead
         themable = true, -- allows highlight groups to be overriden i.e. sets highlights as default
-        numbers = 'none', -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
+        numbers = 'ordinal', -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
         close_command = 'Bdelete! %d', -- can be a string | function, see "Mouse actions"
         buffer_close_icon = '✗',
         close_icon = '✗',
@@ -42,7 +42,7 @@ return {
         show_tab_indicators = false,
         indicator = {
           -- icon = '▎', -- this should be omitted if indicator style is not 'icon'
-          style = 'none', -- Options: 'icon', 'underline', 'none'
+          style = 'underline', -- Options: 'icon', 'underline', 'none'
         },
         icon_pinned = '󰐃',
         minimum_padding = 1,
