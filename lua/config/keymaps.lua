@@ -4,10 +4,10 @@ local opts = { noremap = true, silent = true }
 
 -- File navigation (like Ctrl+P in VSCode)
 map('n', '<C-p>', '<cmd>Telescope find_files<CR>', opts)
-map('n', '<C-Shift-p>', '<cmd>Telescope commands<CR>', opts)
+map('n', '<C-A-p>', '<cmd>Telescope commands<CR>', opts)
 
 -- Search in files (like Ctrl+Shift+F)
-map('n', '<C-Shift-f>', '<cmd>Telescope live_grep<CR>', opts)
+map('n', '<C-A-f>', '<cmd>Telescope live_grep<CR>', opts)
 
 -- Toggle file explorer (like Ctrl+B in VSCode)
 map('n', '<C-b>', '<cmd>Neotree<CR>', opts)
