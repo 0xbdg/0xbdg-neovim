@@ -17,7 +17,7 @@ return {
                     shortcut = {
                         { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
                         {
-                            icon = ' ',
+                            icon = ' ',
                             icon_hl = '@variable',
                             desc = 'Files',
                             group = 'Label',
@@ -25,15 +25,15 @@ return {
                             key = 'f',
                         },
                         {
-                            desc = ' Apps',
+                            desc = ' LazyGit',
                             group = 'DiagnosticHint',
-                            action = 'Telescope app',
-                            key = 'a',
+                            action = 'LazyGit',
+                            key = 'l',
                         },
                         {
                             desc = ' dotfiles',
                             group = 'Number',
-                            action = 'Telescope dotfiles',
+                            action = 'Telescope find_files hidden=true',
                             key = 'd',
                         },
                     },

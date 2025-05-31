@@ -7,6 +7,15 @@ return {
   config = function()
     require('bufferline').setup {
       options = {
+        offsets = {
+            {
+                filetype = "Neotree",
+                text = "File Explorer",
+                highlight = "Directory",
+                separator = true,
+                text_align = "center"
+            }
+        },
         mode = 'buffers', -- set to "tabs" to only show tabpages instead
         themable = true, -- allows highlight groups to be overriden i.e. sets highlights as default
         numbers = 'none', -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,

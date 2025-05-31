@@ -12,7 +12,14 @@ return {
   ---@module "neo-tree"
   ---@type neotree.Config?
         opts = {
-    -- fill any relevant options here
+            source_selector = {
+                winbar = true,
+                statusline = true
+            },
+            window = {
+                position = 'left',
+                width = 30
+            }
         },
     }
 }

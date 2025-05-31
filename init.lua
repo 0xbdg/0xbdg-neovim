@@ -1,5 +1,5 @@
 require("config.options")
-
+require("config.keymaps")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -21,5 +21,8 @@ require("lazy").setup({
     require('plugins.bufferline'),
     require('plugins.lualine'),
     require('plugins.dashboard'),
-    require('plugins.telescope')
+    require('plugins.telescope'),
+    require('plugins.toggleterm'),
+    require('plugins.lazygit'),
+    require('plugins.lsp-config'),
 })
