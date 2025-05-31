@@ -27,7 +27,7 @@ return {
                         {
                             desc = ' LazyGit',
                             group = 'DiagnosticHint',
-                            action = 'LazyGit',
+                            action = 'LazyGitFilter',
                             key = 'l',
                         },
                         {
