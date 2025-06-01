@@ -10,7 +10,7 @@ return {
         offsets = {
             {
                 filetype = "neo-tree",
-                text = "0xbdg",
+                text = "0xbdg - XenoNull",
                 highlight = "Directory",
                 separator = true,
                 text_align = "center"

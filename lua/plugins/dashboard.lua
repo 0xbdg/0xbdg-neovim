@@ -27,7 +27,7 @@ return {
                         {
                             desc = ' LazyGit',
                             group = 'DiagnosticHint',
-                            action = 'LazyGitFilter',
+                            action = 'LazyGit',
                             key = 'l',
                         },
                         {
@@ -36,6 +36,11 @@ return {
                             action = 'Telescope find_files hidden=true',
                             key = 'd',
                         },
+                    },
+                    footer = {
+                        '',
+                        '',
+                        '0xbdg neovim text editor'
                     },
                 },
             })
