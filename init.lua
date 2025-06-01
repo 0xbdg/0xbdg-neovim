@@ -24,5 +24,4 @@ require("lazy").setup({
     require('plugins.telescope'),
     require('plugins.toggleterm'),
     require('plugins.lazygit'),
-    require('plugins.lsp-config'),
 })
