@@ -18,15 +18,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ 
-    require('plugins.neotree'),
-    require('plugins.bufferline'),
-    require('plugins.lualine'),
-    require('plugins.dashboard'),
-    require('plugins.telescope'),
-    require('plugins.toggleterm'),
-    require('plugins.lazygit'),
-    require('plugins.noice'),
-    require('plugins.catppuccin'),
-    require('plugins.nvim-cmp'),
-    require('plugins.indent-blankline')
+    {
+        import = "plugins"
+    }
 })
