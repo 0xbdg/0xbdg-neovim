@@ -27,5 +27,6 @@ require("lazy").setup({
     require('plugins.lazygit'),
     require('plugins.noice'),
     require('plugins.catppuccin'),
-    require('plugins.nvim-cmp')
+    require('plugins.nvim-cmp'),
+    require('plugins.indent-blankline')
 })
