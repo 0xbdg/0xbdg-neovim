@@ -19,6 +19,14 @@ return {
             window = {
                 position = 'left',
                 width = 30
+            },
+            filesystem = {
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = false,
+                    hide_gitignored = true,
+                    never_show = {".git"}
+                }
             }
         },
     }
