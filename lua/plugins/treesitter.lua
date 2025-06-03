@@ -19,7 +19,9 @@ return {
                 "c",
                 "javascript",
                 "dart",
-                "css"
+                "css",
+                "json",
+                "typescript"
             },
 
             auto_install = true, 
