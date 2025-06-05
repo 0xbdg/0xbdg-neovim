@@ -24,15 +24,15 @@ return {
       sources = { 'nvim_diagnostic' },
       sections = { 'error', 'warn' },
       symbols = { error = ' ', warn = ' ', info = ' ', hint = ' ' },
-      colored = false,
+      colored = true,
       update_in_insert = false,
-      always_visible = false,
+      always_visible = true,
       cond = hide_in_width,
     }
 
     local diff = {
       'diff',
-      colored = false,
+      colored = true,
       symbols = { added = ' ', modified = ' ', removed = ' ' }, -- changes diff symbols
       cond = hide_in_width,
     }
@@ -46,7 +46,7 @@ return {
         --        
         section_separators = { left = '', right = '' },
         component_separators = { left = '', right = '' },
-        disabled_filetypes = { 'alpha', 'neo-tree' },
+        disabled_filetypes = { 'alpha', 'neo-tree', 'dashboard' },
         always_divide_middle = true,
       },
       sections = {
