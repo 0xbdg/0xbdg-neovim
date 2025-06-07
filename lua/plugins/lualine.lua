@@ -40,11 +40,11 @@ return {
     require('lualine').setup {
       options = {
         icons_enabled = true,
-        theme = 'nord', -- Set theme based on environment variable
+        theme = 'catppuccin', -- Set theme based on environment variable
         -- Some useful glyphs:
         -- https://www.nerdfonts.com/cheat-sheet
         --        
-        section_separators = { left = '', right = '' },
+        section_separators = { left = '', right = '' },
         component_separators = { left = '', right = '' },
         disabled_filetypes = { 'alpha', 'neo-tree', 'dashboard' },
         always_divide_middle = true,
@@ -52,7 +52,20 @@ return {
       sections = {
         lualine_a = { mode },
         lualine_b = { 'branch' },
-        lualine_c = { filename },
+        lualine_c = { 
+            function()
+                local os = vim.uv.os_uname().sysname
+                if os == 'Linux' then
+                    return ' ' -- Linux icon
+                elseif os == 'Darwin' then
+                    return ' ' -- macOS icon
+                elseif os == 'Windows' then
+                    return ' ' -- Windows icon
+                else
+                    return os
+                end
+            end
+        },
         lualine_x = { diagnostics, diff, { 'encoding', cond = hide_in_width }, { 'filetype', cond = hide_in_width } },
         lualine_y = { 'location' },
         lualine_z = { 'progress' },

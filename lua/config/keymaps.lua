@@ -54,3 +54,6 @@ map('i', '<C-v>', '<C-r>+', opts)  -- Paste in insert mode
 
 map('n', '<A-p>', '<Cmd>BufferLineTogglePin<CR>', { desc = 'Pin Buffer' })
 
+-- Block
+map('n', '<A-b>', '<cmd>Block<CR>', opts)
+map('v', '<A-b>', '<cmd>Block<CR>', opts)

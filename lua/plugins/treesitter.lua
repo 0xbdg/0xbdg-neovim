@@ -14,7 +14,7 @@ return {
             ensured_installed = {
                 "python",
                 "lua",
-                "php",
+                "htmldjango",
                 "html",
                 "c",
                 "javascript",
