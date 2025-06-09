@@ -52,7 +52,8 @@ return {
       sections = {
         lualine_a = { mode },
         lualine_b = { 'branch' },
-        lualine_c = { 
+        lualine_c = { 'filetype' },
+        lualine_x = { diagnostics, diff, { 'encoding', cond = hide_in_width }, { 
             function()
                 local os = vim.uv.os_uname().sysname
                 if os == 'Linux' then
@@ -65,8 +66,9 @@ return {
                     return os
                 end
             end
+
+            } 
         },
-        lualine_x = { diagnostics, diff, { 'encoding', cond = hide_in_width }, { 'filetype', cond = hide_in_width } },
         lualine_y = { 'location' },
         lualine_z = { 'progress' },
       },
