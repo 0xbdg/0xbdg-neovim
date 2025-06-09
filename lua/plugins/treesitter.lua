@@ -21,7 +21,9 @@ return {
                 "dart",
                 "css",
                 "json",
-                "typescript"
+                "typescript",
+                "golang",
+                "rust"
             },
 
             auto_install = true, 
