@@ -22,8 +22,8 @@ return {
                 "css",
                 "json",
                 "typescript",
-                "golang",
-                "rust"
+                "rust",
+                "arduino"
             },
 
             auto_install = true, 
