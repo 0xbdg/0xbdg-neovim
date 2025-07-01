@@ -16,12 +16,11 @@ return {
                 "lua",
                 "htmldjango",
                 "html",
-                "c",
+                "dart",
                 "javascript",
                 "dart",
                 "css",
                 "json",
-                "typescript",
                 "rust",
                 "arduino"
             },
