@@ -14,15 +14,14 @@ return {
             ensured_installed = {
                 "python",
                 "lua",
-                "htmldjango",
                 "html",
-                "dart",
+                "go",
                 "javascript",
-                "dart",
                 "css",
                 "json",
                 "rust",
-                "arduino"
+                "arduino",
+                "php"
             },
 
             auto_install = true, 
