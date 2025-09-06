@@ -15,26 +15,34 @@ return {
                       '    ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═════╝  ╚═════╝  ',
                     },
                     shortcut = {
-                        { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+                        { 
+                            icon = "󰚰 " ,
+                            desc = 'Update', 
+                            group = '@property', 
+                            action = 'Lazy update', 
+                            key = 'u' 
+                        },
                         {
-                            icon = ' ',
+                            icon = ' ',
                             icon_hl = '@variable',
                             desc = 'Files',
                             group = 'Label',
-                            action = 'Telescope find_files',
+                            action = 'Telescope find_files hidden=true',
                             key = 'f',
                         },
                         {
-                            desc = ' LazyGit',
-                            group = 'DiagnosticHint',
+                            icon = " ", 
+                            desc = 'LazyGit',
+                            group = 'Label',
                             action = 'LazyGit',
                             key = 'l',
                         },
                         {
-                            desc = ' dotfiles',
-                            group = 'Number',
-                            action = 'Telescope find_files hidden=true',
-                            key = 'd',
+                            icon = "󰏔 ",
+                            desc = 'Mason',
+                            group = 'Label',
+                            action = 'Mason',
+                            key = 'm',
                         },
                     },
                     footer = {
