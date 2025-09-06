@@ -49,6 +49,8 @@ return {
                             key = 'm',
                         },
                     },
+                    project = { enable = true, limit = 8, icon = '󰪺 ', label = 'Recent Projects', action = 'Telescope find_files cwd=' },
+                    mru = { enable = true, limit = 10, icon = '󱋡 ', label = 'Recent Files', cwd_only = false },
                     footer = {
                         '',
                         '',
