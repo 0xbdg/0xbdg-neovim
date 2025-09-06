@@ -13,6 +13,7 @@ return {
 
             ensured_installed = {
                 "python",
+                "c",
                 "lua",
                 "html",
                 "go",
@@ -21,7 +22,8 @@ return {
                 "json",
                 "rust",
                 "arduino",
-                "php"
+                "php",
+                "htmldjango"
             },
 
             auto_install = true, 
