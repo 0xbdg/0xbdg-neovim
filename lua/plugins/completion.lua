@@ -53,7 +53,6 @@ return { "hrsh7th/nvim-cmp",
     capabilities = capabilities
   }
 
-
   require('lspconfig')['lua_ls'].setup {
     capabilities = capabilities
   }
