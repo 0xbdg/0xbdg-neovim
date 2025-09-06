@@ -6,7 +6,9 @@ return {
             require('dashboard').setup({
                 theme = 'hyper',
                 config = {
+                    packages = { enable = true },
                     header = {
+                      '                                              ',
                       '    ██████╗ ██╗  ██╗██████╗ ██████╗  ██████╗  ',     
                       '   ██╔═████╗╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝  ',     
                       '   ██║██╔██║ ╚███╔╝ ██████╔╝██║  ██║██║  ███╗ ',    
@@ -31,7 +33,8 @@ return {
                             key = 'f',
                         },
                         {
-                            icon = " ", 
+                            icon = " ",
+                            icon_hl = '@variable',
                             desc = 'LazyGit',
                             group = 'Label',
                             action = 'LazyGit',
@@ -39,6 +42,7 @@ return {
                         },
                         {
                             icon = "󰏔 ",
+                            icon_hl = '@variable',
                             desc = 'Mason',
                             group = 'Label',
                             action = 'Mason',
