@@ -1,7 +1,7 @@
 return {
-    'vidocqh/data-viewer.nvim',
+    '0xbdg/data-viewer.nvim',
     opts = {
-        autoDisplayWhenOpenFile = false,
+        autoDisplayWhenOpenFile = true,
         maxLineEachTable = 100,
         columnColorEnable = true,
         columnColorRoulette = { -- Highlight groups
@@ -10,7 +10,7 @@ return {
             "DataViewerColumn2",
         },
         view = {
-            float = false, -- False will open in current window
+            float = true, -- False will open in current window
             width = 0.8, -- Less than 1 means ratio to screen width, valid when float = true
             height = 0.8, -- Less than 1 means ratio to screen height, valid when float = true
             zindex = 50, -- Valid when float = true
