@@ -5,25 +5,30 @@ return {
     build = ":TSUpdate",
 
     config = function()
-        require("nvim-treesitter.configs").setup({ -- enable syntax highlighting
+        require("nvim-treesitter.configs").setup({
             highlight = {
                 enable = true,
+                additional_vim_regex_highlighting = false,
             },
             indent = { enable = true },
 
             ensured_installed = {
                 "python",
                 "c",
+                "cpp",
                 "lua",
                 "html",
                 "go",
                 "javascript",
                 "css",
+                "java",
                 "json",
                 "rust",
                 "arduino",
                 "php",
-                "htmldjango"
+                "dart",
+                "htmldjango",
+                "dockerfile"
             },
 
             auto_install = true, 

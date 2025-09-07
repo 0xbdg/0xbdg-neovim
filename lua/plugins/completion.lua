@@ -3,11 +3,11 @@ return { "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip"
-  },
-  
+  }, 
   config = function() 
     local cmp = require('cmp')
     local lspkind = require('lspkind')
+    local navbuddy = require("nvim-navbuddy")
 
     cmp.setup({
       snippet = {
@@ -62,19 +62,31 @@ return { "hrsh7th/nvim-cmp",
     }
 
     require('lspconfig')['lua_ls'].setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        on_attach = function(client, bufnr)
+            navbuddy.attach(client, bufnr)
+        end
     }
   
     require('lspconfig')['rust_analyzer'].setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        on_attach = function(client, bufnr)
+            navbuddy.attach(client, bufnr)
+        end
     }
   
     require('lspconfig')['arduino_language_server'].setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        on_attach = function(client, bufnr)
+            navbuddy.attach(client, bufnr)
+        end
     }
 
     require('lspconfig')['intelephense'].setup {
-        capabilities = capabilities
+        capabilities = capabilities,
+        on_attach = function(client, bufnr)
+            navbuddy.attach(client, bufnr)
+        end
     }
     end
 }
