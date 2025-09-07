@@ -53,7 +53,7 @@ return {
                     highlight = "DiagnosticVirtualTextInfo",
                 },
                 Hint = {
-                    text = { "", "" },
+                    text = { " ", " " },
                     priority = 5,
                     gui = nil,
                     color = nil,
