@@ -56,7 +56,7 @@ return { "hrsh7th/nvim-cmp",
     })
 
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
-    -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+ 
     vim.lsp.config("pyright",{
         capabilities = capabilities,
         on_attach = function(client, bufnr)
@@ -80,12 +80,26 @@ return { "hrsh7th/nvim-cmp",
   
     vim.lsp.config("arduino_language_server",{
         capabilities = capabilities,
+        cmd = {
+            "arduino-languages-server",
+            "-clangd", "",
+            "-cli" , "",
+            "-cli-config", "",
+            "-fqbn", ""
+        },
         on_attach = function(client, bufnr)
             navbuddy.attach(client, bufnr)
         end
     })
 
     vim.lsp.config('intelephense',{
+        capabilities = capabilities,
+        on_attach = function(client, bufnr)
+            navbuddy.attach(client, bufnr)
+        end
+    })
+
+    vim.lsp.config('gopls',{
         capabilities = capabilities,
         on_attach = function(client, bufnr)
             navbuddy.attach(client, bufnr)
