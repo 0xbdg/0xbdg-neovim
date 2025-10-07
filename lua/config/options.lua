@@ -18,4 +18,4 @@ vim.o.completeopt = 'menuone,noinsert,noselect'
 vim.o.expandtab = true        -- Use spaces instead of tabs
 vim.o.shiftwidth = 4          -- Shift 4 spaces when tab
 vim.o.tabstop = 4             -- 1 tab == 4 spaces
-vim.o.smartindent = true      -- Autoindent new lines
+vim.o.smartindent = true 
