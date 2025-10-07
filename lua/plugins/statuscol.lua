@@ -6,7 +6,7 @@ return {
     require("statuscol").setup({
       setopt = true,
       relculright = true,
-      thousands = false,
+      thousands = true,
 
       ft_ignore = {
         "NvimTree", "neo-tree", "Trouble", "lazy", "mason", "qf", "help"
@@ -21,20 +21,12 @@ return {
           click = "v:lua.ScFa",
           hl = "FoldColumn",
           condition = { true, builtin.not_empty },
-        },
-
-        {
-            sign = {
-                namespace = { "diagnostic/signs" },
-                maxwidth = 1,
-                auto = true,
-            },
-            click = "v:lua.ScSa",
-        },
+        }, 
+        { text = { builtin.lnumfunc ,""},click = "v:lua.ScLa",},
 
         {
           sign = {
-            name = { "gitsigns" },
+            name = { "GitSign*", "gitsigns" },
             maxwidth = 2,
             auto = true,
             colwidth = 1,
@@ -44,9 +36,6 @@ return {
           },
           click = "v:lua.ScSa",
         },
-       
-    
-       
       },
 
       clickmod = "c",
@@ -66,13 +55,13 @@ return {
     vim.o.foldlevel = 99
     vim.o.foldlevelstart = 99
     vim.o.foldcolumn = "1"
-    /*
+    
     vim.opt.fillchars:append({
       fold = " ",
       foldopen = "",
       foldclose = "",
       foldsep = " ",
       eob = " ",
-    })*/
+    })
   end,
 }
