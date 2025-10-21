@@ -90,14 +90,7 @@ return { "hrsh7th/nvim-cmp",
         on_attach = function(client, bufnr)
             navbuddy.attach(client, bufnr)
         end
-    })
-
-    vim.lsp.config('intelephense',{
-        capabilities = capabilities,
-        on_attach = function(client, bufnr)
-            navbuddy.attach(client, bufnr)
-        end
-    })
+    }) 
 
     vim.lsp.config('gopls',{
         capabilities = capabilities,
@@ -105,5 +98,13 @@ return { "hrsh7th/nvim-cmp",
             navbuddy.attach(client, bufnr)
         end
     })
+
+    vim.lsp.config('dockerls',{
+        capabilities = capabilities,
+        on_attach = function(client, bufnr)
+            navbuddy.attach(client, bufnr)
+        end
+    })
+
     end
 }
