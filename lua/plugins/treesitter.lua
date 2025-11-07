@@ -1,6 +1,6 @@
 return {
-    "nvim-treesitter/nvim-treesitter", 
-    branch = 'master', 
+    "nvim-treesitter/nvim-treesitter",
+    branch = 'master',
     lazy = false,
     build = ":TSUpdate",
 
@@ -28,12 +28,12 @@ return {
                 "php",
                 "dart",
                 "htmldjango",
-                "dockerfile"
+                "dockerfile",
+                "bash",
+                "typescript"
             },
 
-            auto_install = true, 
+            auto_install = true,
         })
     end,
 }
-
-
