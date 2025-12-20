@@ -40,20 +40,23 @@ map('i', '<C-y>', '<C-o><C-r>', opts)
 
 -- COPY
 
-map('v', '<C-c>', '"+y', opts)     -- Copy to system clipboard
-map('n', '<C-c>', '"+yy', opts)    -- Copy current line in normal mode
+map('v', '<C-c>', '"+y', opts)  -- Copy to system clipboard
+map('n', '<C-c>', '"+yy', opts) -- Copy current line in normal mode
 
 -- CUT
-map('v', '<C-x>', '"+d', opts)     -- Cut selection to clipboard
-map('n', '<C-x>', '"+dd', opts)    -- Cut current line in normal mode
+map('v', '<C-x>', '"+d', opts)  -- Cut selection to clipboard
+map('n', '<C-x>', '"+dd', opts) -- Cut current line in normal mode
 
 -- PASTE
-map('n', '<C-v>', '"+p', opts)     -- Paste after cursor
+map('n', '<C-v>', '"+p', opts)    -- Paste after cursor
 map('v', '<C-v>', '"+p', opts)
-map('i', '<C-v>', '<C-r>+', opts)  -- Paste in insert mode
+map('i', '<C-v>', '<C-r>+', opts) -- Paste in insert mode
 
 map('n', '<A-p>', '<Cmd>BufferLineTogglePin<CR>', { desc = 'Pin Buffer' })
 
 -- Block
 map('n', '<A-b>', '<cmd>Block<CR>', opts)
 map('v', '<A-b>', '<cmd>Block<CR>', opts)
+
+-- All
+map("n", "<C-a>", "ggVG", opts)
