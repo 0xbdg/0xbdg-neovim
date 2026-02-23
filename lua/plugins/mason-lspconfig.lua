@@ -13,6 +13,9 @@ return {
 			"bashls",
 			"jinja_ls",
 			"djlsp",
+			"html",
+			"tailwindcss",
+			"cssls",
 		},
 	},
 	dependencies = {
