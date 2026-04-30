@@ -16,6 +16,7 @@ return {
 			"html",
 			"tailwindcss",
 			"cssls",
+			"vue_ls",
 		},
 	},
 	dependencies = {
